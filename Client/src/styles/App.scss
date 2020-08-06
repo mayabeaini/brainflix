@@ -1,0 +1,17 @@
+@import './partials/fonts';
+@import './partials/colors';
+@import '../components/Header/header.scss';
+@import '../components/SideVideos/sidevideos.scss';
+@import '../components/CommentForm/commentform.scss';
+@import '../components/Comments/comments.scss';
+@import '../components/Description/description.scss';
+@import '../components/NextVideo/nextvideo.scss';
+@import '../components/Video/video.scss';
+
+* {
+    font-family: 'AvenirNext LT Pro';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $black;
+}

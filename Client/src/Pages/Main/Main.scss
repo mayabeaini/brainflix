@@ -1,0 +1,15 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/colors';
+
+.general{
+    @include desktop{
+        display: flex;
+        margin: 0 12.5vw;
+        justify-content: flex-start;
+    }
+    &__info{
+        @include desktop{
+            width: 49.444vw;
+        }
+    }
+}

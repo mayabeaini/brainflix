@@ -1,0 +1,129 @@
+@import '../../styles/partials/colors';
+@import '../../styles/partials/mixins';
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw 11.5vw 5vw;
+    @include tablet{
+        margin: 0 3.125vw 8.3333vw 3.125vw;
+    }
+    @include desktop{
+        margin: 0 0 3vw 0;
+    }
+    &__title{
+        font-size: 23.5px;
+        line-height: 35px;
+        margin-bottom: 5vw;
+        @include tablet{
+            margin-bottom: 3.125vw;
+            font-size: 36px;
+        }
+        @include desktop {
+            font-size: 28.5px;
+        }
+    }
+    &__details{
+        border-bottom: 1px solid $mercury;
+        padding-bottom: 7.5vw;
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 3.125vw;
+        }
+        @include desktop{
+            padding: 0 2.222vw 1.666vw 0;
+        }
+    }
+    &__info{
+        display: flex;
+        margin-bottom: 10vw;
+        @include tablet{
+            margin: 0;
+        }
+    }
+    &__channel{
+        margin-right: 2.5vw;
+        font-weight: 500;
+        font-size: 15.4px;
+        @include tablet{
+            margin-right: 1.041666vw;
+        }
+        @include desktop{
+            margin-right: 0.5555vw;
+            font-size: 13px;
+        }
+    }
+    &__date{
+        font-weight: 500;
+        color: $silver;
+        font-size: 14.8px;
+        margin-top:0.1vw;
+        @include tablet {
+            font-size: 14px;
+            margin-top: 0.2vw;
+        }
+        @include desktop{
+            font-size: 9.5px;
+            align-self: flex-end;
+        }
+    }
+    &__personal{
+        display: flex;
+    }
+    &__view-icon{
+        margin-right: 2.5vw;
+        @include tablet{
+            margin-right: 1.041666vw;
+        }
+        @include desktop{
+            margin-right: 0.5555vw;
+            width: 1.5vw;
+        }
+    }
+    &__view{
+        font-size: 13px;
+        margin-right: 7.5vw;
+        font-weight: 500;
+        @include tablet{
+            margin-right: 3.125vw;
+            font-size: 13.5px;
+        }
+        @include desktop{
+            margin-right: 1.666vw;
+            font-size: 12px;
+        }
+    }
+    &__like{
+        font-weight: 500;
+        font-size: 13px;
+        @include tablet{
+            font-size: 13.5px;
+        }
+        @include desktop{
+            font-size: 12px;
+        }
+    }
+    &__like-icon{
+        @extend .description__view-icon;
+        @include desktop{
+            width: 1.2vw;
+        }
+    }
+    &__paragraph{
+        margin-top: 7.5vw;
+        font-size: 12.03px;
+        line-height: 20px;
+        @include tablet{
+            margin-top: 5.2083vw;
+            width: 73%;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        @include desktop{
+            margin-top: 2.777vw;
+            width: 70%;
+            font-size: 10.5px;
+        }
+    }
+}

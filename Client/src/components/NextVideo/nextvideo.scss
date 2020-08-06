@@ -1,0 +1,26 @@
+@import '../../styles/partials/colors';
+@import '../../styles/partials/mixins';
+
+.nextvideo{
+    margin: 0 5vw;
+    @include tablet{
+        margin: 0 3.125vw;
+    }
+    @include desktop{
+        margin: 0;
+        border-left: 1px solid $mercury;
+        padding-left: 2.222vw;
+    }
+    &__title{
+        margin: 12.5vw 0;
+        text-transform: uppercase;
+        color: $silver;
+        font-size: 12px;
+        @include tablet{
+            margin: 5.2083vw 0;
+        }
+        @include desktop{
+            margin:0 0 2vw 0;
+        }
+    }
+}

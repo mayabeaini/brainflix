@@ -1,0 +1,113 @@
+@import '../../styles/partials/colors';
+@import '../../styles/partials/mixins';
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 52.8125vw;
+    margin: 0 5vw;
+    padding-bottom: 5vw;
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80px;
+        padding: 0;
+        margin: 0 3.125vw;
+        align-items: center;
+    }
+    @include desktop{
+        margin: 0 12.5vw;
+    }
+    &__logo{
+        display: block;
+        margin: 5vw auto;
+        @include tablet{
+            margin: 0 21.875vw 0 0;
+        }
+    }
+    &__form{
+        align-self: center;
+        @include tablet{
+        display: flex;
+        }
+    }
+    &__search{
+        border: 1px solid $mercury;
+        background-color: $alabaster;
+        height: 12.5vw;
+        border-radius: 4px;
+        background-image: url('../../assets/icons/SVG/Icon-search.svg') ;
+        background-repeat: no-repeat;
+        background-position-x: 5vw;
+        background-position-y: center;
+        width: 100%;
+        padding-left: 13vw;
+        color: $black;
+        outline: none;
+        &:focus{
+            border: 2px solid $brainflix-blue;
+        }
+        &::placeholder{
+            color: $black;
+        }
+        @include tablet{
+            height: 48px;
+            background-position-x: 2.0833vw;
+            padding-left: 6vw;
+            width: 235px;
+        }
+    }
+    &__div{
+        display: flex;
+        margin-top: 2.5vw;
+        @include tablet{
+            margin: 0 0 0 3.125vw;
+        }
+        @include desktop{
+            margin-left: 1.666vw;
+        }
+    }
+    &__button{
+        width: 70vw;
+        height: 48px;
+        margin-right: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        border: 0;
+        border-radius: 4px;
+        background-color:$brainflix-blue;
+        @include tablet{
+            width: 100px;
+            height: 48px;
+            margin-right: 3.125vw;
+        }
+        @include desktop{
+            margin-right: 1.666vw;
+        }
+        &:hover{
+            background-color: $brainflix-blue-dark;
+        }
+    }
+    &__upload{
+        margin-right: 3vw;
+        @include tablet{
+            margin-right: 0.75vw;
+        }
+        @include desktop{
+            margin-right: 0.5vw;
+        }
+    }
+    &__username{
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        object-position: left;
+    }
+}

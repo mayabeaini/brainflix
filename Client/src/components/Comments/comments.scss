@@ -1,0 +1,85 @@
+@import '../../styles/partials/colors';
+@import '../../styles/partials/mixins';
+
+.comments{
+    &__container{
+        border-bottom: 0.5px solid rgba(211, 211, 211,0.4);
+        margin:7.5vw 5vw 0 5vw;
+        padding-bottom: 7.5vw;
+        display: flex;
+        @include tablet{
+            margin: 3.125vw 3.125vw 0 3.125vw;
+            padding-bottom: 3.12vw;
+        }
+        @include desktop{
+            margin: 1.666vw 0 0 0;
+            padding-bottom: 1.666vw;
+        }
+    }
+    &__icon{
+        border-radius: 50%;
+        width: 12.5vw;
+        height: 12.5vw;
+        object-fit: cover;
+        object-position: left;
+        @include tablet{
+            width: 5.208vw;
+            height: 5.208vw;
+        }
+        @include desktop{
+            width: 2.91vw;
+            height: 2.91vw;
+        }
+    }
+    &__boxing{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3.4vw;
+        @include tablet{
+            justify-content: flex-start;
+            margin-bottom: 1.11vw;
+        }
+        @include desktop{
+            margin-bottom: 0.8vw;
+        }
+    }
+    &__area{
+        margin-left: 5vw;
+        width: 100%;
+        @include tablet{
+            margin-left: 2.03vw;
+        }
+        @include desktop{
+            margin-left: 1.111vw;
+        }
+        &-name{
+            font-weight: 500;
+            font-size: 0.875rem;
+            @include tablet{
+                margin-right: 1.11vw;
+            }
+            @include desktop{
+                font-size: 0.76rem;
+                margin-right: 0.7vw;
+            }
+        }
+        &-date{
+            color: $silver;
+            font-size: 0.875rem;
+            align-self: center;
+            @include desktop{
+                font-size: 0.65rem;
+            }
+        }
+        &-paragraph{
+            font-size: 0.875rem;
+            @include tablet{
+                margin-right: 5.2083vw;
+            }
+            @include desktop{
+                font-size: 0.66rem;
+                margin-right: 2.777vw;
+            }
+        }
+    }
+}

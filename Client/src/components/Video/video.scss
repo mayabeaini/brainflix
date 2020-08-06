@@ -1,0 +1,99 @@
+@import '../../styles/partials/colors';
+@import '../../styles/partials/mixins';
+
+.video {
+    background-color: black;
+    height: 56vw;
+    @include tablet {
+        height: 52.0833vw;
+        display: flex;
+        justify-content: center;
+    }
+    @include desktop{
+        height: 37.5vw;
+    }
+    &__vid{
+        width: 100vw;
+        height: 56vw; 
+        object-fit: cover;
+        @include tablet {
+            height: 52.0833vw;
+            width: 91vw;
+        }
+        @include desktop{
+            height: 37.5vw;
+            width: 66vw;
+        }
+    }
+    &__controls{
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        bottom: 45px;
+        margin: 0 5vw;
+        @include desktop{
+            justify-content: center;
+            margin: 0 12.5vw;
+            bottom: 50px;
+        }
+    }
+    &__play{
+        background-color: rgba(0, 0, 0,0.55);
+        border-radius: 4px;
+        width: 50px;
+        height: 35px;
+        display: flex;
+        &-icon{
+            margin: 0 auto;
+        }
+    }
+    &__bar{
+        background-color: rgba(0, 0, 0,0.55);
+        height: 35px;
+        width: 120px;
+        border-radius: 4px;
+        margin: 0 1vw;
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            width: 519px;
+            padding: 0 2.4vw;
+        }
+        @include desktop{
+            margin: 0 1.5vw;
+            width: 600px;
+            padding: 0 1.5vw;
+        }
+    }
+    &__border{
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        margin: 16px 17px;
+        border-radius: 2.5px;
+        @include tablet {
+            width: 420px;
+            margin: 16px 0;
+        }
+        @include desktop{
+            width: 500px;
+        }
+    }
+    &__time{
+        color: $white;
+        font-size: 9px;
+        display: none;
+        @include tablet{
+            display: initial;
+            align-self: center;
+        }
+    }
+    &__icon{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0,0.55);
+        border-radius: 4px;
+        width: 80px;
+        height: 35px;
+        padding:  0 10px;
+    }
+}

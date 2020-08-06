@@ -1,0 +1,62 @@
+@import '../../styles/partials/colors';
+@import '../../styles/partials/mixins';
+
+.nextvideo{
+    &__boxing{
+        display: flex;
+        width: 120px;
+        margin: 0 0 7.5vw 0;
+        @include tablet{
+            margin-bottom: 3.125vw;
+        }
+        @include desktop{
+            margin-bottom: 1.666vw;
+            justify-content: flex-start;
+        }
+    }
+    &__image{
+        width: 120px;
+        height: 70px;
+        margin-right: 5vw;
+        border-radius: 5px;
+        @include tablet{
+            margin-right: 2.0833vw;
+        }
+        @include desktop{
+            margin-right: 1.111vw;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include desktop{
+            justify-content: flex-start;
+        }
+    }
+    &__description{
+        width:50vw;
+        margin-bottom: 2vw;
+        font-size: 14px;
+        @include tablet{
+            width: 20vw;
+            margin-bottom: 2.0833vw;
+            font-weight: 500;
+            font-size: 12.2px;
+        }
+        @include desktop{
+            width: 15vw;
+            margin-bottom: 1.3vw;
+            font-size: 14.4px;
+        }
+    }
+    &__channel {
+        font-size: 11px;
+        @include tablet{
+            font-size: 12px;
+        }
+        @include desktop{
+            font-size: 13.5px;
+        }
+    }
+}

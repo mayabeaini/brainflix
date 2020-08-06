@@ -1,0 +1,12 @@
+@import '../../styles/partials/colors';
+@import '../../styles/partials/mixins';
+
+.upload{
+    margin: 7.5vw 5vw;
+    @include tablet{
+        margin: 6.25vw 3.125vw;
+    }
+    @include desktop{
+        margin: 3.333vw 12.5vw;
+    }
+}
